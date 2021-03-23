@@ -281,6 +281,7 @@ if __name__ == '__main__':
   secret = input().strip().split('#')
   secret.append('')
   cookie = secret[0]
+  logging.info(cookie)
   sckey = secret[1]
 
   Sign(cookie).run()
